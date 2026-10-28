@@ -1,5 +1,7 @@
 # Dr. Morepen Home — website front end
 
+**Live preview:** https://dmh-website-2ixn.onrender.com (Render free plan; the first load after it sleeps can take about a minute)
+
 Next.js 15 (App Router) + Tailwind CSS v4 + TypeScript. Built from the Figma file
 [claude reference DMH website](https://www.figma.com/design/CqJk10UtnsmFF60Wy9GAbA/claude-reference-DMH-website?node-id=0-1)
 (a copy of the DMH WebApp "Development" page, 28 Oct 2026).
