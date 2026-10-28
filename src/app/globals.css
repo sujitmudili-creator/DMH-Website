@@ -1,26 +1,251 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens from the Figma file "claude reference DMH website"
+ * (copy of DMH WebApp · Development page). Figma variable → token:
+ *   text/primary → ink · text/secondary → ink-2 · text/disabled → ink-3 · text/on-dark → on-dark
+ *   surface/card → card · surface/muted → muted
+ *   border/card → line · border/line → line-2 · border/field → field
+ *   brand/primary → brand · brand/link → link · brand/tint → tint · brand/hero → hero
+ * Add new Figma variables here with the same naming, never as raw hex in components.
+ */
+@theme {
+  --color-ink: #0f0f0f;
+  --color-ink-2: #6b7280;
+  --color-ink-3: #9ca3af;
+  --color-on-dark: #fefefe;
+
+  --color-card: #fefefe;
+  --color-muted: #f2f3f5;
+
+  --color-line: #eeeeee;
+  --color-line-2: #efefef;
+  --color-field: #d1d5db;
+
+  --color-brand: #03319f;
+  --color-link: #03319f;
+  --color-tint: #f6f9ff;
+  --color-tint-2: #fbfcff;
+  --color-tint-3: #e0ebfb;
+  --color-tile: rgb(243 243 243 / 0.6);
+  --color-hero: #1e6fd9;
+  --color-accent: #ffa500;
+  --color-dot: #afafaf;
+
+  /* Status: status/danger (confirmed on W4.03–W4.05, W5.05–W5.06 error screens). */
+  --color-danger: #d92d20;
+
+  /* Profile (W10–W14): upcoming booking header, log-out / cancelled fill, Shadow/Menu (profile dropdown). */
+  --color-info-tint: #eef3ff;
+  --color-danger-fill: #ffedec;
+  --shadow-menu: 0 12px 32px 0 rgb(5 33 102 / 0.12);
+  /* Date dropdown (W12.04): unavailable calendar day, popover shadow. */
+  --color-ink-4: #c4c8cf;
+  --shadow-popover: 0 8px 24px 0 rgb(0 0 0 / 0.12);
+
+  /* Log in / location area (W1.09–W1.14, W5.x): search-results hairline and the drawn placeholder map
+     (background, blocks, park). danger-tint / field-selected / choice-selected are defined under Care team. */
+  --color-line-3: #e1e3e8;
+  --color-map: #edeff2;
+  --color-map-block: #e1e4e9;
+  --color-map-park: #d5eedb;
+
+  /* Bookings area (W17–W19): status/success, status/success-tint, warning icon, dashed divider,
+     and the status-card gradient tops (confirmed / cancelled / completed). */
+  --color-success: #008a40;
+  --color-success-tint: #eaf6ef;
+  --color-warning: #f57305;
+  --color-dash: #e5e5e5;
+  --color-status-confirmed: #eaf1ff;
+  --color-status-cancelled: #fbe9e7;
+  --color-status-completed: #ebfff4;
+  /* Booking details / rate page background (W17.x, W18.x screen fill). */
+  --color-tint-page: #f8faff;
+  /* Professional profile (W19.02): status/rating badge, border-hairline (review dividers),
+     brand-blue (review initials), verified badge fill. */
+  --color-rating: #f59e0b;
+  --color-hairline: #e6ebf6;
+  --color-brand-blue: #0638a1;
+  --color-verified: #f0f5ff;
+  /* Professional profile mobile hero gradient top (M19.02). */
+  --color-pro-hero: #d9e5fc;
+
+  /* Checkout (W1.08–W3.09): surface/page (add-on cards, confirmed page), surface-accent-soft
+     ("Best available" avatar), provider slot chip (green text + gradient), scroll indicator thumb. */
+  --color-page: #f5f6f8;
+  --color-accent-soft: #eef2fa;
+  --color-available: #03b857;
+  --color-available-from: #bef6d7;
+  --color-available-to: #dbf6e8;
+  --color-thumb: #bcbcbc;
+
+  /* Effect style Shadow/Card. */
+  --shadow-card: 0 0 16px 0 rgb(68 68 68 / 0.08);
+  /* Effect style Shadow/Bottom bar (mobile sticky action bars). */
+  --shadow-bar: 0 -4px 16px 0 rgb(0 0 0 / 0.06);
+
+  /* Loading skeletons (Figma section 20): "Bar" fill, plus a soft shimmer. Blocks/pills use surface/muted. */
+  --color-skeleton: #e9ebef;
+  --animate-shimmer: shimmer 1.4s ease-in-out infinite;
+  @keyframes shimmer {
+    from {
+      background-position: 100% 0;
+    }
+    to {
+      background-position: -100% 0;
+    }
+  }
+  /* Care team (W8/W9): status/danger-tint, border/field-selected, border/choice-selected,
+     surface/inverse (toast), Shadow/Floating. success-tint is under Bookings. */
+  --color-danger-tint: #fef3f2;
+  --color-field-selected: #0f0f0f;
+  --color-choice-selected: #0b3c8c;
+  --color-inverse: #0f0f0f;
+  --shadow-floating: 0 2px 8px rgb(0 0 0 / 0.12);
+
+  /* Services (W1.02–W1.07, W7.02): "What's included" box (border + header tint), "Good to know" box,
+     "Why families choose us" band and tile gradient stops, FAQ card gradient end. */
+  --color-included: #edf4ff;
+  --color-note-line: #fbf4e7;
+  --color-note-tint: #fdf9f1;
+  --color-why-from: rgb(18 45 70);
+  --color-why-to: rgb(47 87 128);
+  --color-why-tile-from: rgb(47 76 99);
+  --color-why-tile-to: rgb(30 59 79);
+  --color-faq: #f5f5f5;
+  /* Mobile floating "Menu" pill (M1.03). */
+  --color-pill: #1a1a1a;
+  --shadow-pill: 0 4px 12px 0 rgb(0 0 0 / 0.2), inset 0 4px 8px 0 rgb(255 255 255 / 0.16);
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-3xl: 32px;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-instrument), var(--font-inter), system-ui, sans-serif;
+
+  /* Text styles: Web/* and Body/* in Figma. Weight is set separately (font-medium / font-semibold). */
+  --text-d40: 40px;
+  --text-d40--line-height: 1.2;
+  --text-h32: 32px;
+  --text-h32--line-height: 1.2;
+  --text-h24: 24px;
+  --text-h24--line-height: 1.3;
+  --text-h20: 20px;
+  --text-h20--line-height: 1.3;
+  --text-h18: 18px;
+  --text-h18--line-height: 1.3;
+  --text-b16: 16px;
+  --text-b16--line-height: 1.5;
+  --text-b14: 14px;
+  --text-b14--line-height: 1.5;
+  --text-b12: 12px;
+  --text-b12--line-height: 1.5;
+
+  --gradient-hero: linear-gradient(180deg, rgb(59 127 230) 0%, rgb(45 107 237) 100%);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gutter: 16px;
+  /* State layer (Figma component "State layer"): hover is web only. */
+  --state-hover-light: rgb(15 15 15 / 0.04);
+  --state-press-light: rgb(15 15 15 / 0.08);
+  --state-hover-dark: rgb(15 15 15 / 0.1);
+  --state-press-dark: rgb(15 15 15 / 0.2);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@media (min-width: 768px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --gutter: 32px;
+  }
+}
+
+/* Page widths: content 1120 (home, listings), 960 (checkout, profile). */
+@utility page {
+  width: 100%;
+  max-width: calc(1120px + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+@utility page-narrow {
+  width: 100%;
+  max-width: calc(960px + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* State layer on light and dark fills. */
+@utility state {
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: background-color 120ms ease;
+  }
+  @media (hover: hover) {
+    &:hover::after {
+      background-color: var(--state-hover-light);
+    }
+  }
+  &:active::after {
+    background-color: var(--state-press-light);
+  }
+}
+
+@utility state-dark {
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: background-color 120ms ease;
+  }
+  @media (hover: hover) {
+    &:hover::after {
+      background-color: var(--state-hover-dark);
+    }
+  }
+  &:active::after {
+    background-color: var(--state-press-dark);
+  }
+}
+
+/* Horizontal scroller used by carousels; hides the scrollbar. */
+@utility scroller {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & > * {
+    scroll-snap-align: start;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-card);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* In the base layer so utilities (`outline-none` on text inputs, dialogs) can override it. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
 }

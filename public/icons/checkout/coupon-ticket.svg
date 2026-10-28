@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="472" height="190" viewBox="0 0 472 190" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Ticket">
+<use xlink:href="#stroke0_0_17" fill="#FEFEFE"/>
+<mask id="stroke1_0_17" fill="white">
+<use xlink:href="#stroke0_0_17"/>
+</mask>
+<path d="M460 0C466.627 0 472 5.37258 472 12V67.1641C465.373 67.1641 460 72.5366 460 79.1641C460 85.7915 465.373 91.1641 472 91.1641V178C472 184.627 466.627 190 460 190H12C5.37258 190 0 184.627 0 178V91.1641C6.62742 91.1641 12 85.7915 12 79.1641C12 72.5366 6.62742 67.1641 0 67.1641V12C2.19054e-06 5.37259 5.37258 0 12 0H460Z" stroke-width="2" stroke="#EEEEEE" mask="url(#stroke1_0_17)"/>
+</g>
+<defs>
+<path id="stroke0_0_17" d="M460 0C466.627 0 472 5.37258 472 12V67.1641C465.373 67.1641 460 72.5366 460 79.1641C460 85.7915 465.373 91.1641 472 91.1641V178C472 184.627 466.627 190 460 190H12C5.37258 190 0 184.627 0 178V91.1641C6.62742 91.1641 12 85.7915 12 79.1641C12 72.5366 6.62742 67.1641 0 67.1641V12C2.19054e-06 5.37259 5.37258 0 12 0H460Z"/>
+</defs>
+</svg>

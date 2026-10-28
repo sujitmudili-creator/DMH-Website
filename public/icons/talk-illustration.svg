@@ -1,0 +1,61 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="306" height="261.8" viewBox="0 0 306 261.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Talk illustration">
+<g id="Phone" filter="url(#filter0_d_0_4)">
+<rect x="102" y="40.8" width="108.8" height="197.2" rx="23.8" fill="#1F2A44"/>
+</g>
+<rect id="Screen" x="108.8" y="47.6" width="95.2" height="183.6" rx="18.7" fill="#F6F9FF"/>
+<rect id="Notch" x="141.1" y="54.4" width="30.6" height="6.8" rx="3.4" fill="#1F2A44"/>
+<circle id="Dot" cx="125.8" cy="83.3" r="8.5" fill="#1E6FD9"/>
+<rect id="Msg" x="117.3" y="98.6" width="57.8" height="13.6" rx="6.8" fill="#FEFEFE"/>
+<rect id="Msg_2" x="117.3" y="119" width="44.2" height="13.6" rx="6.8" fill="#FEFEFE"/>
+<rect id="Msg mine" x="144.5" y="142.8" width="51" height="13.6" rx="6.8" fill="#1E6FD9"/>
+<rect id="Msg_3" x="117.3" y="166.6" width="61.2" height="13.6" rx="6.8" fill="#FEFEFE"/>
+<rect id="Tail" x="95.2" y="71.4" width="17" height="17" rx="3.4" transform="rotate(-45 95.2 71.4)" fill="#1E6FD9"/>
+<g id="Bubble care team" filter="url(#filter1_d_0_4)">
+<rect x="17" y="34" width="95.2" height="51" rx="23.8" fill="#1E6FD9"/>
+</g>
+<circle id="Dot_2" cx="45.9" cy="59.5" r="5.1" fill="#FEFEFE"/>
+<circle id="Dot_3" cx="62.9" cy="59.5" r="5.1" fill="#FEFEFE"/>
+<circle id="Dot_4" cx="79.9" cy="59.5" r="5.1" fill="#FEFEFE"/>
+<rect id="Tail_2" x="204" y="119" width="17" height="17" rx="3.4" transform="rotate(-45 204 119)" fill="#FEFEFE"/>
+<g id="Bubble you" filter="url(#filter2_d_0_4)">
+<rect x="197.2" y="91.8" width="91.8" height="51" rx="23.8" fill="#FEFEFE"/>
+<rect x="198.05" y="92.65" width="90.1" height="49.3" rx="22.95" stroke="#EEEEEE" stroke-width="1.7"/>
+</g>
+<rect id="Line" x="214.2" y="107.1" width="54.4" height="6.8" rx="3.4" fill="#C9D6EC"/>
+<rect id="Line_2" x="214.2" y="120.7" width="37.4" height="6.8" rx="3.4" fill="#C9D6EC"/>
+<path id="Sparkle" d="M239.7 34L241.804 40.3964L248.2 42.5L241.804 44.6036L239.7 51L237.596 44.6036L231.2 42.5L237.596 40.3964L239.7 34Z" fill="#8DB6F5"/>
+<path id="Sparkle_2" d="M47.6 122.4L49.2829 127.517L54.4 129.2L49.2829 130.883L47.6 136L45.9171 130.883L40.8 129.2L45.9171 127.517L47.6 122.4Z" fill="#8DB6F5"/>
+<path id="Sparkle_3" d="M267.75 170L269.223 174.477L273.7 175.95L269.223 177.423L267.75 181.9L266.277 177.423L261.8 175.95L266.277 174.477L267.75 170Z" fill="#FF8A1F"/>
+<path id="Sparkle_4" d="M73.1 0L74.3622 3.83781L78.2 5.1L74.3622 6.36219L73.1 10.2L71.8378 6.36219L68 5.1L71.8378 3.83781L73.1 0Z" fill="#FFB366"/>
+</g>
+<defs>
+<filter id="filter0_d_0_4" x="85" y="30.6" width="142.8" height="231.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6.8"/>
+<feGaussianBlur stdDeviation="8.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0235294 0 0 0 0 0.219608 0 0 0 0 0.631373 0 0 0 0.14 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+<filter id="filter1_d_0_4" x="0" y="23.8" width="129.2" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6.8"/>
+<feGaussianBlur stdDeviation="8.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0235294 0 0 0 0 0.219608 0 0 0 0 0.631373 0 0 0 0.14 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+<filter id="filter2_d_0_4" x="180.2" y="81.6" width="125.8" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6.8"/>
+<feGaussianBlur stdDeviation="8.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0235294 0 0 0 0 0.219608 0 0 0 0 0.631373 0 0 0 0.14 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+</defs>
+</svg>

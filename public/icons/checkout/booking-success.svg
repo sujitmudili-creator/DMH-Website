@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="160" height="128" viewBox="0 0 160 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Success icon">
+<circle id="Outer" cx="80" cy="64" r="56" fill="#EAF6EF"/>
+<circle id="Middle" cx="80" cy="64" r="42" fill="#008A40"/>
+<circle id="Inner" cx="80" cy="64" r="30" fill="#008A40"/>
+<g id="Tick">
+<path id="Vector" d="M70.55 64.57L76.76 70.78L89.45 57.82" stroke-width="4.05" stroke-linecap="round" stroke-linejoin="round" stroke="#FEFEFE"/>
+</g>
+<g id="Confetti">
+<path id="Vector_2" d="M72 7.5C73.933 7.5 75.5 5.933 75.5 4C75.5 2.067 73.933 0.5 72 0.5C70.067 0.5 68.5 2.067 68.5 4C68.5 5.933 70.067 7.5 72 7.5Z" fill="#7C3AED"/>
+<path id="Vector_3" d="M14 61C16.7614 61 19 58.7614 19 56C19 53.2386 16.7614 51 14 51C11.2386 51 9 53.2386 9 56C9 58.7614 11.2386 61 14 61Z" fill="#F6AE36"/>
+<path id="Vector_4" d="M146 52C148.209 52 150 50.2091 150 48C150 45.7909 148.209 44 146 44C143.791 44 142 45.7909 142 48C142 50.2091 143.791 52 146 52Z" fill="#38BDF8"/>
+<path id="Vector_5" d="M40 107.5C41.933 107.5 43.5 105.933 43.5 104C43.5 102.067 41.933 100.5 40 100.5C38.067 100.5 36.5 102.067 36.5 104C36.5 105.933 38.067 107.5 40 107.5Z" fill="#22C55E"/>
+<path id="Vector_6" d="M22 24C24 22 26 26 28 24" stroke-width="2.2" stroke-linecap="round" stroke="#F57305"/>
+<path id="Vector_7" d="M128 16C131 12 137 14 135 19C133 23 127 20 131 16" stroke-width="2" stroke-linecap="round" stroke="#F04438"/>
+<path id="Vector_8" d="M20 88C22 90 24 86 26 88C28 90 30 86 32 88" stroke-width="2" stroke-linecap="round" stroke="#03319F"/>
+<path id="Vector_9" d="M138 80L150 78L142 86L138 80Z" fill="#A3E635"/>
+<path id="Vector_10" d="M118 112C118.622 113.035 119.502 113.892 120.553 114.487C121.605 115.082 122.792 115.394 124 115.394C125.208 115.394 126.395 115.082 127.447 114.487C128.498 113.892 129.378 113.035 130 112" stroke-width="3" stroke-linecap="round" stroke="#03319F"/>
+<path id="Vector_11" d="M54 18L51 12" stroke-width="2" stroke-linecap="round" stroke="#F04438"/>
+</g>
+</g>
+</svg>

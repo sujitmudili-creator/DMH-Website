@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28.1" viewBox="0 0 28 28.1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon &#194;&#183; headset &#194;&#183; bulk">
+<path id="Band" opacity="0.4" d="M5 16.5V13.5C5 8.53 9.03 4.5 14 4.5C18.97 4.5 23 8.53 23 13.5V16.5" stroke-width="2.2" stroke-linecap="round" stroke="#03319F"/>
+<rect id="Cup" x="3" y="14.5" width="6" height="9" rx="3" fill="#03319F"/>
+<rect id="Cup_2" x="19" y="14.5" width="6" height="9" rx="3" fill="#03319F"/>
+<path id="Mic" d="M22 23.5V24C22 25.66 20.66 27 19 27H15.5" stroke-width="2.2" stroke-linecap="round" stroke="#03319F"/>
+</g>
+</svg>
